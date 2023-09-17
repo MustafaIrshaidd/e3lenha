@@ -1,0 +1,31 @@
+.provide {
+  height: 75vh;
+}
+
+.provide-header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.provide-points {
+  font-size: 1.1rem;
+}
+
+.provide-points .provide-point span {
+  color: var(--primaryGreen);
+  font-weight: 700;
+}
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  /* Header Content */
+
+  .provide-header {
+    font-size: 2.5rem;
+  }
+
+  .provide-points {
+    font-size: 2rem;
+  }
+}
