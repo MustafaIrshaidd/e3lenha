@@ -17,6 +17,11 @@ body {
   font-family: "Tajawal", sans-serif;
 }
 
+html,body{
+  height:100% !important;
+   min-height:100% !important; 
+  }
+
 li::marker {
   font-size: 1.3em;
 }
@@ -27,7 +32,7 @@ button {
   min-width: 150px;
   font-size: 1.3rem !important;
   font-weight: 700;
-  padding:0px 10px;
+  padding: 0px 10px;
 }
 
 .orange-filled--btn {
@@ -62,7 +67,7 @@ button {
 
 .green-outlined--btn {
   border: 1px solid var(--primaryGreen);
-  color:var(--primaryGreen);
+  color: var(--primaryGreen);
   background-color: transparent;
 }
 
