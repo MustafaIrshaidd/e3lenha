@@ -12,3 +12,65 @@
   /* Width */
   --centralizedContainer: 85%;
 }
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+html,body{
+  height:100% !important;
+   min-height:100% !important; 
+  }
+
+li::marker {
+  font-size: 1.3em;
+}
+
+/* buttons */
+
+button {
+  min-width: 150px;
+  font-size: 1.3rem !important;
+  font-weight: 700;
+  padding: 0px 10px;
+}
+
+.orange-filled--btn {
+  background-color: var(--primaryOrange);
+}
+
+.orange-outlined--btn {
+  border: 1px solid var(--primaryOrange);
+  background-color: transparent;
+}
+
+.orange-outlined--btn:hover {
+  background-color: var(--primaryOrange);
+}
+
+.orange-filled--btn:hover {
+  background-color: transparent;
+  color: var(--primaryOrange);
+  border: 1px solid var(--primaryOrange);
+}
+
+.green-filled--btn {
+  color: var(--lightColor);
+  background-color: var(--primaryGreen);
+}
+
+.green-filled--btn:hover {
+  background-color: transparent;
+  color: var(--primaryGreen);
+  border: 1px solid var(--primaryGreen);
+}
+
+.green-outlined--btn {
+  border: 1px solid var(--primaryGreen);
+  color: var(--primaryGreen);
+  background-color: transparent;
+}
+
+.green-outlined--btn:hover {
+  background-color: var(--primaryGreen);
+}
