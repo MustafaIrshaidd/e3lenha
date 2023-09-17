@@ -12,3 +12,36 @@
   /* Width */
   --centralizedContainer: 85%;
 }
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+
+/* buttons */
+
+.orange--btn,
+.green--btn {
+  max-width: 130px;
+  min-width: 130px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.orange--btn{
+    background-color: var(--primaryOrange);
+    border : 1px solid var(--primaryOrange);
+}
+.orange--btn:hover{
+    background-color: transparent;
+    color:var(--primaryOrange);
+    border : 1px solid var(--primaryOrange);
+}
+
+.green--btn{
+    color:var(--primaryGreen);
+    border : 1px solid var(--primaryGreen);
+}
+.green--btn:hover{
+    background-color: var(--primaryGreen);
+    color:var(--lightColor);
+}
