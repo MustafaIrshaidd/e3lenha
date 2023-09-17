@@ -1,0 +1,40 @@
+.header {
+  height: calc(100vh - 84px);
+}
+
+/* Header Content */
+
+.header-content--firstspan {
+  font-size: 1.5rem;
+}
+
+.header-content--secondspan {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.header-content--thirdspan {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  /* Header Content */
+
+  .header-content--firstspan {
+    font-size: 2.5rem;
+  }
+
+  .header-content--secondspan {
+    font-size: 3rem;
+  }
+
+  .header-content--thirdspan {
+    font-size: 1.5rem;
+  }
+}
