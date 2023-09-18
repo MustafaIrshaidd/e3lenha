@@ -28,16 +28,16 @@
     <!-- Write Your Code Here -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container gap-5">
+    <nav class="navbar navbar-expand-lg navbar-light sticky bg-transparent">
+      <div class="container gap-lg-5">
         <a class="navbar-brand" href="#"
           ><img
-            src="/assets/images/LogoDark.svg"
+            src="assets/images/LogoDark.svg"
             width="100px"
             alt="logo dark not found"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler w-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -46,25 +46,25 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
           <ul class="navbar-nav w-100">
-            <div class="d-lg-flex gap-lg-4">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+            <div class=" d-lg-flex gap-lg-4 fs-5 py-3 py-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link w-auto active" aria-current="page" href="#"
                   >الرئيسية</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">التجار</a>
+                <a class="nav-link" href="#sellers">التجّار</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">المسوقون</a>
+                <a class="nav-link" href="#marketers">المسوّقون</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">تواصل معنا</a>
+                <a class="nav-link" href="#contactus">تواصل معنا</a>
               </li>
             </div>
-            <div class="ms-lg-auto">
+            <div class="ms-lg-auto py-3 py-lg-0">
               <li class="nav-item">
                 <button
                   type="button"
@@ -85,7 +85,7 @@
     <!-- Main -->
     <main>
       <!-- Header -->
-      <header class="header">
+      <header class="header vh-100 pt-5 position-relative">
         <div class="container h-100">
           <div
             class="d-flex flex-column flex-lg-row-reverse justify-content-center justify-content-lg-between align-items-center h-100 gap-3 gap-lg-0">
@@ -125,10 +125,11 @@
       <!-- End Of Header -->
 
       <!-- Services -->
-      <section class="services">
+      <section class="services position-relative">
         <div class="container">
           <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="services-for-seller d-flex flex-column justify-content-evenly align-items-center vh-100">
+            <div class="services-for-seller d-flex flex-column justify-content-evenly align-items-center vh-100" id="sellers">
+              
               <div class="content col-12 text-center d-flex flex-column justify-content-evenly align-items-center gap-3">
                 <h2>ماذا تقدم إعلنها للتجّار؟</h2>
                 <p>تقدم إعلنها منصة مليئة بالمسوّقين لتسويق المنتجات المختلفة الخاصة بكل تاجر</p>
@@ -140,7 +141,7 @@
                 <img class="w-100" src="assets/images/sellerImage.png" alt="seller image not found">
               </div>
             </div>
-            <div class="services-for-marketers d-flex flex-column justify-content-evenly align-items-center vh-100">
+            <div class="services-for-marketers d-flex flex-column justify-content-evenly align-items-center vh-100 position-relative" id="marketers">
               <div class="content col-12 text-center d-flex flex-column justify-content-evenly align-items-center gap-3">
                 <h2>ماذا تقدم إعلنها للمسوّقين؟</h2>
                 <p>تقدم إعلنها فرص لزيادة الدخل من خلال التسويق الرقمي والعمولة المباشرة عند الشراء من الروابط المخصصة للمسوّق</p>
@@ -171,7 +172,7 @@
       <!-- End Of Provide -->
 
       <!-- Contact Us -->
-      <section class="contactus py-5">
+      <section class="contactus py-5" id="contactus">
         <div class="container h-100">
           <div class="d-flex flex-column justify-content-center align-items-center gap-4 text-center text-lg-start">
             <h2 class="contactus-header text-center text-lg-start w-100 text-white fs-1">تجربة استثنائية مع إعلنها!</h2>
