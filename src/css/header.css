@@ -1,7 +1,3 @@
-.header {
-  height: calc(100vh - 84px);
-}
-
 /* Header Content */
 
 .header-content--firstspan {
@@ -20,7 +16,6 @@
 }
 
 
-
 /* Media Query Large Screens */
 
 @media only screen and (min-width: 992px) {
@@ -37,4 +32,5 @@
   .header-content--thirdspan {
     font-size: 1.5rem;
   }
+
 }
