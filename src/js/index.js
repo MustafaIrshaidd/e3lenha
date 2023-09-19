@@ -2,7 +2,7 @@ const navbar = document.querySelector("nav");
 const sticky = navbar.offsetTop;
 let topRectangles;
 const navBarAnchorsSections = document.querySelectorAll(
-  "#header","#sellers, #marketers, #contactus"
+  "#sellers, #marketers, #contactus"
 );
 
 const getTopRectanglesForNavbar = () => {
@@ -47,8 +47,10 @@ const handleActiveAnchorsNavbar = () => {
     return;
   }
 
-  if(activeAnchorFound){
+  if (activeAnchorFound) {
     headerAnchor.classList.remove("active");
+  } else {
+    headerAnchor.classList.add("active");
   }
 };
 
