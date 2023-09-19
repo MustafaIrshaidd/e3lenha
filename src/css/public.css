@@ -21,8 +21,8 @@ li::marker {
   font-size: 1.3em;
 }
 
-main{
-  overflow: hidden;
+main {
+  overflow: hidden !important;
 }
 
 /* buttons */
