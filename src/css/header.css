@@ -15,6 +15,10 @@
   padding-top: 10px;
 }
 
+.header-orange--bg,
+.header-green--bg {
+  display: none;
+}
 
 /* Media Query Large Screens */
 
@@ -33,4 +37,21 @@
     font-size: 1.5rem;
   }
 
+  /* circle backgrounds */
+
+  .header-orange--bg,
+  .header-green--bg {
+    display: block;
+  }
+
+  .header-orange--bg {
+    top: 0;
+    left: 0;
+  }
+
+
+  .header-green--bg {
+    top: 0;
+    right: 0;
+  }
 }

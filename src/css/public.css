@@ -17,9 +17,12 @@ body {
   font-family: "Tajawal", sans-serif;
 }
 
-
 li::marker {
   font-size: 1.3em;
+}
+
+main{
+  overflow: hidden;
 }
 
 /* buttons */
@@ -70,3 +73,4 @@ button {
 .green-outlined--btn:hover {
   background-color: var(--primaryGreen);
 }
+
