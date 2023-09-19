@@ -1,12 +1,12 @@
 const navbar = document.querySelector("nav");
 const sticky = navbar.offsetTop;
-
+let topRectangles;
 const navBarAnchorsSections = document.querySelectorAll(
   "#sellers, #marketers, #contactus"
 );
 
 const getTopRectanglesForNavbar = () => {
-  return Array.from(navBarAnchorsSections).map((section) => {
+  topRectangles = Array.from(navBarAnchorsSections).map((section) => {
     const sectionId = section.id;
     const sectionRect = section.getBoundingClientRect();
     return { id: sectionId, top: sectionRect.top, bottom: sectionRect.bottom };
@@ -23,30 +23,35 @@ const handleActiveAnchorsNavbar = () => {
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.clientHeight;
 
-  const topRectangles = getTopRectanglesForNavbar();
   let activeAnchorFound = false;
 
   for (const sectionData of topRectangles) {
     const { id, top, bottom } = sectionData;
     const anchor = document.querySelector(`a[href="#${id}"]`);
-    
-    // Adjust the condition to check if the section is in the viewport with a buffer
-    if (scrollY >= top - windowHeight * 0.2 && scrollY < bottom - windowHeight * 0.2) {
+
+    if (
+      scrollY >= top - windowHeight * 0.2 &&
+      scrollY < bottom - windowHeight * 0.2
+    ) {
       anchor.classList.add("active");
       activeAnchorFound = true;
     } else {
       anchor.classList.remove("active");
     }
   }
-
-  // Handle the "contactus" anchor separately
+  const headerAnchor = document.querySelector('a[href="#header"]');
   const contactUsAnchor = document.querySelector('a[href="#contactus"]');
-  contactUsAnchor.classList.toggle(
-    "active",
-    scrollY + windowHeight >= documentHeight
-  );
+  if (scrollY + windowHeight >= documentHeight) {
+    contactUsAnchor.classList.toggle("active");
+    headerAnchor.classList.remove("active");
+    return;
+  }
 
-
+  if (activeAnchorFound) {
+    headerAnchor.classList.remove("active");
+  } else {
+    headerAnchor.classList.add("active");
+  }
 };
 
 const handleScroll = () => {
