@@ -5,6 +5,16 @@ const navBarAnchorsSections = document.querySelectorAll(
   "#sellers, #marketers, #contactus"
 );
 
+const handleNavBackground = (event) => {
+  navbar.classList.add("bg-light");
+  navbar.classList.remove("bg-transparent");
+  if (navbar.classList.contains("corner-radius")) {
+    navbar.classList.remove("corner-radius");
+  } else {
+    navbar.classList.add("corner-radius");
+  }
+};
+
 const getTopRectanglesForNavbar = () => {
   topRectangles = Array.from(navBarAnchorsSections).map((section) => {
     const sectionId = section.id;
@@ -14,6 +24,9 @@ const getTopRectanglesForNavbar = () => {
 };
 
 const handleStickyNavbar = () => {
+  if (navbar.classList.contains("corner-radius")) {
+    return;
+  }
   navbar.classList.toggle("bg-light", window.scrollY > sticky);
   navbar.classList.toggle("bg-transparent", window.scrollY <= sticky);
 };
