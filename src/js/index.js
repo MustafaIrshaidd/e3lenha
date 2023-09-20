@@ -2,7 +2,7 @@ const navbar = document.querySelector("nav");
 const sticky = navbar.offsetTop;
 let topRectangles;
 const navBarAnchorsSections = document.querySelectorAll(
-  "#sellers, #marketers, #contactus"
+  "#header, #sellers, #marketers, #contactus"
 );
 
 const handleNavBackground = (event) => {
@@ -52,18 +52,11 @@ const handleActiveAnchorsNavbar = () => {
       anchor.classList.remove("active");
     }
   }
-  const headerAnchor = document.querySelector('a[href="#header"]');
+
   const contactUsAnchor = document.querySelector('a[href="#contactus"]');
+
   if (scrollY + windowHeight >= documentHeight) {
     contactUsAnchor.classList.toggle("active");
-    headerAnchor.classList.remove("active");
-    return;
-  }
-
-  if (activeAnchorFound) {
-    headerAnchor.classList.remove("active");
-  } else {
-    headerAnchor.classList.add("active");
   }
 };
 
