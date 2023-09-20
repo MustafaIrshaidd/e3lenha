@@ -25,7 +25,10 @@ main {
   overflow: hidden !important;
 }
 
-/* buttons */
+
+.btn{
+  border-color:transparent;
+}
 
 button {
   min-width: 150px;
